@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="inicio" />
+    <string name="productos" />
+    <string name="categorias">Categorías\n</string>
+    <string name="open">Abrir</string>
+    <string name="close">Cerrar</string>
+    <string name="descripcion">Crea espacios acogedores con nuestra selección de productos diseñados para tu bienestar.</string>
+    <string name="ver_productos">Ver productos</string>
+    <string name="relajación">Bienestar en Casa</string>
+    <string name="cuidado">Cuidado personal</string>
+    <string name="vida">" Vida natural y equilibrio"</string>
+    <string name="estilo">Comodidad y estilo diario</string>
+</resources>

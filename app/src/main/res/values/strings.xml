@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">LifeSync</string>
+    <string name="inicio">Inicio</string>
+    <string name="pantalla_de_productos"> Pantalla de productos</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="productos"> Productos </string>
+    <string name="categorias">Categorías\n</string>
+    <string name="pantalla_inicio">Pantalla de Inicio</string>
+    <string name="open">Abrir</string>
+    <string name="close">Cerrar</string>
+    <string name="bienvenida">Bienvenido a LyfeSync, confort y estilo para tu día a día.</string>
+    <string name="descripcion">Crea espacios acogedores con nuestra selección de productos diseñados para tu bienestar.</string>
+    <string name="ver_productos">Ver productos</string>
+    <string name="categorías">Categorías</string>
+    <string name="bienestar">Bienestar en Casa</string>
+    <string name="relajación">Momentos Especiales y relajación</string>
+    <string name="cuidado">Cuidado personal</string>
+    <string name="vida">" Vida natural y equilibrio"</string>
+    <string name="estilo">Comodidad y estilo diario</string>
+    <string name="carrito">Carrito</string>
+    <string name="perfil">Perfil</string>
+    <string name="pantalla_carrito">Carrito</string>
+    <string name="pantalla_perfil">Perfil</string>
+    <string name="pantalla_cbienestar">Categoría: Bienestar</string>
+    <string name="pantalla_cvida">Categoría: Vida natural y equilibrio</string>
+    <string name="pantalla_ccuidado">Categoría: Cuidado personal</string>
+    <string name="pantalla_crelajación">Categoría: Momentos especiales y relajación</string>
+    <string name="pantalla_cestilo">Categoría: Comodidad y estilo diario</string>
+    <string name="velas">Velas aromáticas y difusores de lujo</string>
+    <string name="d_vela">Crea un ambiente acogedor y elegante con fragancias premium y ceras naturales, perfectas para relajarte y disfrutar.</string>
+    <string name="p_vela">$60.000</string>
+    <string name="c_velas">Cantidad disponible: 10</string>
+    <string name="a_carrito">Añadir al carrito</string>
+    <string name="cafe">Sets de té/café gourmet</string>
+    <string name="d_cafe">Disfruta de una experiencia única con selecciones premium, perfectas para los amantes de las bebidas calientes.</string>
+
+</resources>
