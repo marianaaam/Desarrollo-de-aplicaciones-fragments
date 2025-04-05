@@ -1,40 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    android:startDestination="@id/inicioFragment">
+    app:startDestination="@id/inicioFragment">
 
+    <!-- Fragmentos principales -->
     <fragment
         android:id="@+id/inicioFragment"
-        android:name="com.example.tiendavirtual.fragments.InicioFragment"
+        android:name="com.example.tienda_virtual.fragments.InicioFragment"
         android:label="@string/inicio"
         app:defaultNavHost="true"/>
 
     <fragment
-        android:id="@+id/productosFragment"
-        android:name="com.example.tiendavirtual.fragments.ProductosFragment"
-        android:label="@string/productos"
-        app:defaultNavHost="true"
-        />
-
-    <fragment
         android:id="@+id/categoriasFragment"
-        android:name="com.example.tiendavirtual.fragments.CategoriasFragment"
+        android:name="com.example.tienda_virtual.fragments.CategoriasFragment"
         android:label="@string/categorías"
-        app:defaultNavHost="true"
-         />
+        app:defaultNavHost="true"/>
 
     <fragment
-        android:id="@+id/nav_cart"
-        android:name="com.example.tiendavirtual.fragments.CarritoFragment"
+        android:id="@+id/productosFragment"
+        android:name="com.example.tienda_virtual.fragments.ProductosFragment"
+        android:label="@string/productos"
+        app:defaultNavHost="true"/>
+
+    <fragment
+        android:id="@+id/carritoFragment"
+        android:name="com.example.tienda_virtual.fragments.CarritoFragment"
         android:label="@string/carrito"
-        app:defaultNavHost="true"
-        />
+        app:defaultNavHost="true"/>
 
     <fragment
-        android:id="@+id/nav_profile"
-        android:name="com.example.tiendavirtual.fragments.PerfilFragment"
+        android:id="@+id/perfilFragment"
+        android:name="com.example.tienda_virtual.fragments.PerfilFragment"
         android:label="@string/perfil"
-        app:defaultNavHost="true"
-        />
+        app:defaultNavHost="true"/>
+
+    <fragment
+        android:id="@+id/EditarPerfilFragment"
+        android:name="com.example.tienda_virtual.fragments.EditPerfilFragment"
+        android:label="Editar Perfil"
+        tools:layout="@layout/fragment_edit_perfil" />
+
+    <action
+        android:id="@+id/action_editPerfilFragment_to_perfilFragment"
+        app:destination="@id/perfilFragment" />
+
+    <action
+        android:id="@+id/action_perfilFragment_to_editPerfilFragment"
+        app:destination="@id/EditarPerfilFragment" />
+
+
+    <!-- Fragmentos de categorías -->
+    <fragment
+        android:id="@+id/bienestarFragment"
+        android:name="com.example.tienda_virtual.fragments.BienestarFragment"
+        android:label="Bienestar"/>
+
+    <fragment
+        android:id="@+id/relajacionFragment"
+        android:name="com.example.tienda_virtual.fragments.RelajacionFragment"
+        android:label="Relajación"/>
+
+    <fragment
+        android:id="@+id/cuidadoFragment"
+        android:name="com.example.tienda_virtual.fragments.CuidadoFragment"
+        android:label="Cuidado"/>
+
+    <fragment
+        android:id="@+id/vidaFragment"
+        android:name="com.example.tienda_virtual.fragments.VidaFragment"
+        android:label="Vida"/>
+
+    <fragment
+        android:id="@+id/estiloFragment"
+        android:name="com.example.tienda_virtual.fragments.EstiloFragment"
+        android:label="Estilo"/>
 </navigation>

@@ -1,15 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center">
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/textViewTituloCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/carrito"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        android:fontFamily="serif"
+        android:layout_gravity="center"
+        android:paddingBottom="12dp"/>
+
+    <!-- RecyclerView para los productos en el carrito -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCarrito"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"/>
 
     <TextView
+        android:id="@+id/textViewTotal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="@string/pantalla_carrito"
+        android:text="@string/total"
+        android:textSize="18sp"
         android:textColor="@color/black"
-        android:textSize="25sp"
-        />
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:gravity="end"/>
+
+    <Button
+        android:id="@+id/buttonFinalizarCompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/finalizar_compra"
+        android:backgroundTint="@color/turquoise"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
 </LinearLayout>

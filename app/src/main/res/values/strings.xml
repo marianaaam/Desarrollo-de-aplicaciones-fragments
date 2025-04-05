@@ -32,6 +32,28 @@
     <string name="c_velas">Cantidad disponible: 10</string>
     <string name="a_carrito">Añadir al carrito</string>
     <string name="cafe">Sets de té/café gourmet</string>
-    <string name="d_cafe">Disfruta de una experiencia única con selecciones premium, perfectas para los amantes de las bebidas calientes.</string>
+    <string name="d_cafe">Disfruta de una experiencia premium con nuestros exclusivos sets</string>
+    <string name="finalizar_compra">Finalizar compra</string>
+    <string name="total">Total: $0.00</string>
+    <string name="aceite">Aceites esenciales</string>
+    <string name="humificador">"Humidificadores y purificadores de aire "</string>
+    <string name="antifaz">Antifaces para dormir</string>
+    <string name="d_velas">Crea un ambiente acogedor con aromas envolventes y elegantes.</string>
+    <string name="cantidad">Cantidad disponible: 10</string>
+    <string name="d_aceites">Relájate y equilibra tu bienestar con aceites puros y naturales.</string>
+    <string name="d_humificador">Mejora la calidad del aire y respira un ambiente más puro.</string>
+    <string name="d_antifaz">Bloquea la luz y descansa mejor con total comodidad.</string>
+    <string name="lampara">Lámparas de luz cálida\n</string>
+    <string name="d_lampara">Ilumina tu espacio con una luz suave y acogedora.</string>
+    <string name="nombre">Mariana Lizeth Marin Rojas</string>
+    <string name="correo">mariana123@gmail.com</string>
+    <string name="numero">+57 3201154896</string>
+    <string name="e_perfil">Editar perfil</string>
+    <string name="c_foto">Cambiar foto</string>
+    <string name="g_cambios">Guardar cambios</string>
+    <string name="c_nombre">Nombre</string>
+    <string name="c_apellido">Apellido</string>
+    <string name="c_telefono">Teléfono</string>
+    <string name="c_correo">Correo</string>
 
 </resources>

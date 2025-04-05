@@ -5,11 +5,12 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.core.content.ContextCompat
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
 import com.example.tienda_virtual.R
 import com.google.android.material.navigation.NavigationView
 
@@ -28,12 +29,14 @@ class MainActivity : AppCompatActivity() {
         /*Configuración de la barra de herramientas*/
         toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
+        toolbar.setTitleTextColor(ContextCompat.getColor(this, R.color.white))
 
         /*Navegación de los fragments*/
         val navHostFragment = supportFragmentManager
             .findFragmentById(R.id.nav_host_fragment)
 
         navController = navHostFragment?.findNavController()!!
+
 
         drawerLayout = findViewById(R.id.drawer_layout)
         val navView : NavigationView = findViewById(R.id.nav_view)
@@ -45,5 +48,29 @@ class MainActivity : AppCompatActivity() {
             R.string.open,
             R.string.close
         )
+
+        drawerLayout.addDrawerListener(drawerToggle)
+        drawerToggle.syncState()
+
+        appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.inicioFragment,
+                R.id.productosFragment,
+                R.id.categoriasFragment,
+        ),
+            drawerLayout
+        )
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        navView.setupWithNavController(navController)
+
+        navController.addOnDestinationChangedListener { _, _, _ ->
+            supportActionBar?.title = ""
+        }
+
+    }
+
+
+    override fun onSupportNavigateUp(): Boolean {
+        return navController.navigateUp() || super.onSupportNavigateUp()
     }
 }

@@ -11,4 +11,5 @@
     <string name="cuidado">Cuidado personal</string>
     <string name="vida">" Vida natural y equilibrio"</string>
     <string name="estilo">Comodidad y estilo diario</string>
+    <string name="total">Total: $0.00</string>
 </resources>
