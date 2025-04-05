@@ -43,13 +43,11 @@
         tools:layout="@layout/fragment_edit_perfil" />
 
     <action
-        android:id="@+id/action_editPerfilFragment_to_perfilFragment"
-        app:destination="@id/perfilFragment" />
-
-    <action
         android:id="@+id/action_perfilFragment_to_editPerfilFragment"
         app:destination="@id/EditarPerfilFragment" />
-
+    <action
+        android:id="@+id/action_editPerfilFragment_to_perfilFragment"
+        app:destination="@id/perfilFragment" />
 
     <!-- Fragmentos de categorías -->
     <fragment

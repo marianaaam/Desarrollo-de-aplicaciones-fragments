@@ -29,7 +29,6 @@ class MainActivity : AppCompatActivity() {
         /*Configuración de la barra de herramientas*/
         toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
-        toolbar.setTitleTextColor(ContextCompat.getColor(this, R.color.white))
 
         /*Navegación de los fragments*/
         val navHostFragment = supportFragmentManager
@@ -57,6 +56,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.inicioFragment,
                 R.id.productosFragment,
                 R.id.categoriasFragment,
+                R.id.carritoFragment,
+                R.id.perfilFragment
         ),
             drawerLayout
         )
