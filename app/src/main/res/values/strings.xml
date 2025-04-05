@@ -55,5 +55,6 @@
     <string name="c_apellido">Apellido</string>
     <string name="c_telefono">Teléfono</string>
     <string name="c_correo">Correo</string>
+    <string name="precio">$60.000</string>
 
 </resources>

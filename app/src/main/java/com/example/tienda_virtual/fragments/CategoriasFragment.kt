@@ -10,6 +10,13 @@ import androidx.navigation.fragment.findNavController
 import com.example.tienda_virtual.R
 
 class CategoriasFragment : Fragment() {
+
+    private lateinit var layoutBienestar: LinearLayout
+    private lateinit var layoutRelax: LinearLayout
+    private lateinit var layoutCuidado: LinearLayout
+    private lateinit var layoutVida: LinearLayout
+    private lateinit var layoutEstilo: LinearLayout
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -22,11 +29,12 @@ class CategoriasFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val navController = findNavController()
-        val layoutBienestar = view.findViewById<LinearLayout>(R.id.layoutBienestar)
-        val layoutRelax = view.findViewById<LinearLayout>(R.id.layoutRelax)
-        val layoutCuidado = view.findViewById<LinearLayout>(R.id.layoutCuidado)
-        val layoutVida = view.findViewById<LinearLayout>(R.id.layoutVida)
-        val layoutEstilo = view.findViewById<LinearLayout>(R.id.layoutEstilo)
+
+        layoutBienestar = view.findViewById(R.id.layoutBienestar)
+        layoutRelax = view.findViewById(R.id.layoutRelax)
+        layoutCuidado = view.findViewById(R.id.layoutCuidado)
+        layoutVida = view.findViewById(R.id.layoutVida)
+        layoutEstilo = view.findViewById(R.id.layoutEstilo)
 
         layoutBienestar.setOnClickListener {
             navController.navigate(R.id.bienestarFragment)
